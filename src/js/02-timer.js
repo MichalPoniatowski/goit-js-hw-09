@@ -44,7 +44,7 @@ const options = {
 
   onClose(selectedDates) {
     let pickedDate = selectedDates[0].getTime();
-    // console.log(`data z kalendarza: ${pickedDate}`);
+
     if (pickedDate < new Date().getTime()) {
       Notiflix.Notify.failure('Please choose a date in the future');
     } else {
@@ -55,11 +55,7 @@ const options = {
           let currentDate = new Date().getTime();
           const difference = pickedDate - currentDate;
 
-          console.log(`difference: ${difference}`);
-
           let differenceToObject = convertMs(difference);
-
-          console.log('obj:', differenceToObject);
 
           daysEl.innerHTML = addLeadingZero(differenceToObject.days);
           hoursEl.innerHTML = addLeadingZero(differenceToObject.hours);

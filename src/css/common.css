@@ -18,13 +18,14 @@ img {
 }
 
 #datetime-picker {
-  width: 12rem;
+  width: 11rem;
   height: 2rem;
   font-size: 1.2rem;
   text-align: center;
   font-weight: bold;
   color: rgb(12, 12, 114);
   border-radius: 0.5rem;
+  background-color: rgb(195, 205, 206);
 }
 
 button {
@@ -34,6 +35,7 @@ button {
   font-weight: bold;
   color: rgb(12, 12, 114);
   border-radius: 0.5rem;
+  background-color: rgb(195, 205, 206);
 }
 
 button:hover {
